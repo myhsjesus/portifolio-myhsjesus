@@ -277,7 +277,12 @@ footer {
     header {
         flex-direction: column; /* Alinha os elementos do cabeçalho em coluna. */
         text-align: center; /* Centraliza o texto no cabeçalho. */
+        height: 230px;
       }
+
+    header img{
+        max-width: 60%;
+    }
 
     nav ul li{
         display: flex;
@@ -290,14 +295,14 @@ footer {
         margin-bottom: 1rem; /* Adiciona margem inferior à imagem do logo. */
       }
     nav ul {
-        margin-top: 1rem; /* Adiciona margem superior à lista de navegação. */
+        margin-top: 0.4rem; /* Adiciona margem superior à lista de navegação. */
         justify-content: center; /* Alinha os itens da lista de navegação ao centro. */
       } 
     .title{
-        font-size: 1.2em;
+        font-size: 1.3rem;
     }
     .container-about h2{
-        font-size: 1.2em;
+        font-size: 1.3rem;
     }
     .container-about p{
         
@@ -326,7 +331,7 @@ footer {
         font-size: 1rem;
     }
     .container-contato h2{
-    font-size: 1.2em;
+    font-size: 1.3em;
     }
 
     .container-contato p{
