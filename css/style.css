@@ -1,0 +1,340 @@
+/* Reset de estilos básicos */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    font-family: "Roboto",Arial, sans-serif;
+    background-color: #000;
+    color: #6ce5d6;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-image: url(../img/fundo.jpg); 
+    max-width: 100%;
+    height: 200px;
+    opacity: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #009a8d;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header img{
+    max-width: 30%;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color: #aeffff;
+    border-bottom: 2px solid #aeffff;
+    font-weight: bold;
+}
+
+
+section {
+    padding: 40px 0;
+}
+
+/* Estilos específicos para seções alternadas */
+.bg-light {
+    background-color: #0f0f0f;
+}
+/*estilos para a seção sobre*/
+.container-about{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+.container-about h2{
+    padding: 2%;
+    color: #009a8d;
+    text-align: center;
+    font-size: 2em;
+}
+.container-about p{
+    padding: 2%;
+    color: #fff;
+    font-size: 1.15em;
+    text-align: justify;
+}
+/* Estilos de habilidades */
+.title{
+    font-size: 2em;
+    text-align: center;
+    color: #009a8d;
+}
+.container-habilidades{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+/*Estilos para os cartões individuais*/
+.habilidade{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #226960;
+    padding: 20px;
+    box-shadow: 0 2px 4px #133f39;
+    border-radius: 10px;
+}
+.habilidade {
+    margin-bottom: 20px;
+}
+
+.habilidade h3 {
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.habilidade img {
+    max-width: 50%;
+    padding: 2%;
+}
+
+.github{
+    background-color: #636363;
+    border-radius: 50px;
+}
+/*Estilos do portifólio*/
+.container-portfolio{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+/*Estilos para os cartões individuais do portifólio*/
+.projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #226960;
+    padding: 20px;
+    box-shadow: 0 2px 4px #133f39;
+    border-radius: 10px;
+}
+    
+.projeto {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.projeto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    filter: grayscale(0.9);
+}
+
+.projeto h3 {
+    font-size: 1.5rem;
+    color: #51d2c4;
+    padding: 2%;
+}
+
+.projeto p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.projeto a {
+    text-decoration: none;
+    color: #92ebe1b9;
+    font-weight: bold;
+    padding: 2%;
+    font-size: 1.1rem;
+}
+
+.projeto .vermais:hover {
+    text-decoration: none;
+    color: #009a8d88;
+    font-weight: bold;
+    transform: scale(1.1);
+    border-bottom: 1.5px solid #009a8d88;
+}
+
+.projeto .image:hover {
+    transform: scale(1.1);
+}
+
+.projeto img:hover{
+    filter: none
+}
+/* Estilos de contato e redes sociais */
+.container-contato{
+    text-align: center;
+}
+.container-contato h2{
+    color: #009a8d;
+    font-size: 2em;
+}
+
+.container-contato p{
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.redes-sociais {
+    margin-top: 20px;
+}
+
+.redes-sociais img{
+    max-width: 4%; 
+}
+
+.redes-sociais a {
+    margin-right: 10px;
+}
+
+.redes-sociais a img:hover {
+    transform: scale(1.1);
+}
+
+.topo{
+    padding: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; 
+}
+  
+#myBtn {
+  display: none;
+  position: fixed;
+  max-width: 30px;
+  bottom: 3%;
+  right: 2%;
+  z-index: 9999;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  padding: 1%;
+  border-radius: 45px;
+  border: 1px solid #fff;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  border: 1px solid #fff;
+}
+
+footer {
+    background-color: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    padding: 2% 0;
+}
+
+@media screen and (max-width: 768px){
+    p {
+        font-size: 0.8rem;
+    }
+    header {
+        flex-direction: column; /* Alinha os elementos do cabeçalho em coluna. */
+        text-align: center; /* Centraliza o texto no cabeçalho. */
+      }
+
+    nav ul li{
+        display: flex;
+        flex-direction: column; /* Alinha os elementos do cabeçalho em coluna. */
+        text-align: center; /* Centraliza o texto no cabeçalho. */
+        font-size: 1rem;
+      }
+    header img {
+        width: 100%;
+        margin-bottom: 1rem; /* Adiciona margem inferior à imagem do logo. */
+      }
+    nav ul {
+        margin-top: 1rem; /* Adiciona margem superior à lista de navegação. */
+        justify-content: center; /* Alinha os itens da lista de navegação ao centro. */
+      } 
+    .title{
+        font-size: 1.2em;
+    }
+    .container-about h2{
+        font-size: 1.2em;
+    }
+    .container-about p{
+        
+        font-size: 1rem;
+    }
+    .habilidade h3 {
+        font-size: 1rem;
+    }
+    .habilidade img {
+        max-width: 30%;
+    }
+    .container-portfolio{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        max-width: 700px;
+    }
+    .projeto h3 {
+        font-size: 1.2rem;
+    }
+    
+    .projeto p {
+        font-size: 1rem;;
+    }
+    
+    .projeto a {
+        font-size: 1rem;
+    }
+    .container-contato h2{
+    font-size: 1.2em;
+    }
+
+    .container-contato p{
+        font-size: 1rem;
+        color: #fff;
+    }
+    .redes-sociais img{
+        max-width: 9%; 
+    }
+
+}
